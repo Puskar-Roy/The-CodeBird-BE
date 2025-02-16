@@ -52,6 +52,7 @@ export const login = asyncHandler(async (req: Request, res: Response) => {
 
 export const register = asyncHandler(async (req: Request, res: Response) => {
   const { name, email, password } = req.body;
+  console.log(name);
   if (!name || !email || !password) {
     throw Error('All fields must be filled');
   }

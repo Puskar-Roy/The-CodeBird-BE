@@ -17,6 +17,7 @@ const router: Router = express.Router();
 router.get('/', protect, getAllUsers);
 router.get('/:userId', protect, getUserById);
 router.put('/:userId', protect, updateUserById);
+//wher is getProfile?
 router.post('/:userId/profile', protect, fileUpload, createProfilePic);
 router.put('/:userId/profile', protect, fileUpload, updateProfilePic);
 router.delete('/:userId', protectAdmin, deleteUserById);
